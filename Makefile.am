@@ -1,7 +1,7 @@
 ACLOCAL_AMFLAGS = -I m4
 
 AM_CFLAGS = -I$(top_srcdir) -I$(top_srcdir)/ilbc/interface -I$(top_srcdir)/signal_processing/include \
-    -Wall -Wextra -Werror -fvisibility=hidden -Wno-unused-parameter -fno-strict-aliasing
+    -Wall -Wextra -Werror -fvisibility=hidden -Wno-unused-parameter -fno-strict-aliasing -fPIC
 
 libilbcincludedir = $(includedir)
 libilbcinclude_HEADERS = $(top_srcdir)/ilbc/interface/ilbc.h
@@ -11,7 +11,7 @@ pkgconfig_DATA = libilbc.pc
 
 lib_LTLIBRARIES = libilbc.la
 
-libilbc_la_LDFLAGS = -version-info @LIBILBC_VERSION@ -no-undefined
+#libilbc_la_LDFLAGS = -version-info @LIBILBC_VERSION@ -no-undefined
 
 libilbc_la_SOURCES = \
     ilbc/abs_quant.c \
