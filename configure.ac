@@ -13,8 +13,6 @@ AC_PROG_LIBTOOL
 # Checks for programs.
 AC_PROG_CC
 
-DOLT
-
 AC_SUBST(LIBTOOL_DEPS)
 
 # soname version to use
