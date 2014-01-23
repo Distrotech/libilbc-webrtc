@@ -11,7 +11,7 @@ pkgconfig_DATA = libilbc.pc
 
 lib_LTLIBRARIES = libilbc.la
 
-#libilbc_la_LDFLAGS = -version-info @LIBILBC_VERSION@ -no-undefined
+libilbc_la_LDFLAGS = -version-info @LIBILBC_VERSION@ -no-undefined
 
 libilbc_la_SOURCES = \
     ilbc/abs_quant.c \
